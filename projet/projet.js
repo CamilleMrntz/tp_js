@@ -8,7 +8,14 @@ elInput.addEventListener('input', event => {
     value = event.target.value;
 });
 
+
+
 elSubmit.addEventListener('click', async () => {
+    message.innerHTML = '';
+    if (!value || value === '0') {
+        message.innerHTML = '<p class="erreur">Entrée non valide. Entrez un nombre supérieur à 0</p>';
+        return;
+    }
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${value}`);
     const posts = await response.json();
 
