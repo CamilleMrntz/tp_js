@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        body {
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+        }
+
+        .result {
+            color: palevioletred;
+            padding: 3px;
+        }
+
+        .warning {
+            color: purple;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Profil de l'utilisateur</h1>
+    <p>Formulaire de saisie</p>
+
+    <div class="form">
+      <label for="users">Liste des utilisateurs : </label>
+      <select class="users"></select>
+        <option></option>
+      <input type="submit" value="Afficher" class="submitUsers">
+    </div>
+
+    <div id="statistiques">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
